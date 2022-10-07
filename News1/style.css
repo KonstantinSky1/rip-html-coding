@@ -1,0 +1,229 @@
+.news {
+  color: #224C4F;
+  padding: 58px 10px 39px 10px;
+  background: #FAFAFA;
+}
+
+.news__container {
+  max-width: 1173px;
+  margin: 0 auto;
+}
+
+.news__title {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  margin: 0 0 24px 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 41px;
+}
+
+.news__largeNewsCard {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.news__largeNewsCard_type_margin {
+  margin: 0 0 67px 0;
+}
+
+.news__largeNewsCard-image {
+  flex: 0 0 476px;
+}
+
+.news__largeNewsCard-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.news__largeNewsCard-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.news__largeNewsCard-content-textBlock {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0 0 10px 0;
+}
+
+.news__largeNewsCard-content-text-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.news__largeNewsCard-content-text {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.news-link {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  text-align: end;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.news-link span::after {
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 14px;
+  background: url('./image/arrow-right-icon.svg') no-repeat;
+  margin: 0 0 0 8px;
+}
+
+.news-link:hover {
+  opacity: .5;
+}
+
+.news-link:active {
+  color: #224C4F;
+}
+
+.news__title-second {
+  margin: 0 0 25px 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.news-today {
+  display: flex;
+  color: #DADADA;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.news-today_type_margin {
+  margin: 0 0 14px 0;
+}
+
+.news-today img {
+  width: 18px;
+  height: 20px;
+}
+
+.news-today__text {
+  margin: 0 0 0 15px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.news__card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 375px);
+  gap: 24px;
+  justify-content: center;
+  margin: 0 0 40px 0;
+}
+
+.news__smallCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  min-height: 554px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.news__smallCard-image {
+  width: 375px;
+  height: 229px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.news__smallCard-description {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.news__smallCard-description-text-block {
+  flex: 1 1 auto;
+}
+
+.news__smallCard-title {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 14px 0;
+}
+
+.news__smallCard-text {
+  margin: 0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.news__paginate {
+  text-align: end;
+}
+
+.news__paginate-text {
+  margin: 0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.news__paginate-text::before {
+  content: "";
+  display: inline-block;
+  background: url('./image/arrow-paginate-left.svg') no-repeat;
+  width: 12px;
+  height: 20px;
+  margin: 0 20px 0 0;
+  vertical-align: -3px;
+}
+
+.news__paginate-text::after {
+  content: "";
+  display: inline-block;
+  background: url('./image/arrow-paginate-right.svg') no-repeat;
+  width: 12px;
+  height: 20px;
+  margin: 0 0 0 20px;
+  vertical-align: -3px;
+}
+
+@media screen and (max-width: 850px) {
+  .news__largeNewsCard {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .news__card-list {
+    grid-template-columns: repeat(auto-fill, 280px);
+  }
+
+  .news__smallCard {
+    max-width: 280px;
+  }
+}
